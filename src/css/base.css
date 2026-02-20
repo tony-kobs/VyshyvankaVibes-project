@@ -19,24 +19,6 @@ body {
   background: var(--black);
 }
 
-.section {
-  padding: 75px 0;
-}
-
-.title {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 44px;
-  /* line-height: 58px; */
-  line-height: 1.32;
-  letter-spacing: -0.03em;
-  color: var(--white);
-}
-
-.accent {
-  color: var(--yellow);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,4 +31,53 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding: 75px 0;
+  }
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 44px;
+
+  /* line-height: 48px; */
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 54px;
+    /* line-height: 64px; */
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .title {
+    font-weight: 400;
+    font-size: 64px;
+    /* line-height: 74px; */
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+}
+
+.accent {
+  color: var(--yellow);
 }

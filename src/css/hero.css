@@ -1,0 +1,128 @@
+.hero-section {
+  padding-top: 84px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  margin: 20px auto 40px;
+  max-width: 154px;
+  max-height: 49px;
+
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.arrow-icon {
+  fill: var(--yellow);
+}
+
+.little-icon {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order-hero-link {
+    margin-top: 40px;
+    margin-bottom: 46px;
+  }
+
+  .hero-image {
+    width: 413px;
+    height: 575px;
+    align-self: start;
+  }
+
+  .little-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 115px;
+    max-height: 111px;
+  }
+
+  .icon-made {
+    width: 52px;
+    height: 51px;
+    fill: var(--yellow);
+  }
+
+  .text-icon {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    gap: 90px;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    gap: 61px;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+}
