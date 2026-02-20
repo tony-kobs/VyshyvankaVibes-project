@@ -1,5 +1,10 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-nav" viewBox="0 0 48 32">
+<path fill="none" stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8.638 5.455h38.029"></path>
+<path fill="none" stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8.638 24.849h38.029"></path>
+<path fill="none" stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M20.116 15.151h26.551"></path>
+</symbol>
 <symbol id="icon-untitled" viewBox="0 0 32 32">
 <path d="M26.709 17.757c-0.174-1.303-0.286-2.466-0.337-3.49-0.022-1.040 0.017-1.94 0.119-2.7l-25.293 14.603-1.197-2.073 25.293-14.603c-0.728-0.325-1.537-0.758-2.426-1.297-0.861-0.556-1.803-1.218-2.825-1.988l1.518-0.877c3.209 1.349 6.143 2.024 8.804 2.023l0.513 0.888c-1.35 2.271-2.233 5.149-2.65 8.636l-1.518 0.877z"></path>
 </symbol>
