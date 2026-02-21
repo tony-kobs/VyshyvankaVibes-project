@@ -1,0 +1,54 @@
+.about-section {
+  background-image: url(../img/bg-pictures/grey-elem.png);
+  background-repeat: no-repeat;
+  background-position: right -200px bottom;
+  background-size: 459px 408px;
+}
+
+.about-us-info {
+  margin-bottom: 50px;
+}
+
+.about-title {
+  margin-bottom: 40px;
+}
+
+.about-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us-info {
+    margin-bottom: 40px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    background-position: right -150px bottom;
+    background-size: 545px 484px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .about-image-wrapper {
+    min-width: 594px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-image-wrapper {
+    min-width: 709px;
+  }
+}
