@@ -15,6 +15,8 @@
 
 .collections-gallery {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 40px;
