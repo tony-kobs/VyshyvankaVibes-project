@@ -1,0 +1,37 @@
+<section class="section section-bg-image">
+  <div class="container container--bg-image">
+    <h2 class="visually-hidden">Big Image</h2>
+    <picture class="bg-image">
+      <source
+        media="(min-width:1440px)"
+        srcset="
+          ../img/webp/bg-image/bg-image-bigdeck2x.jpg 2x,
+          ../img/webp/bg-image/bg-image-bigdeck1x.jpg 1x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ../img/webp/bg-image/bg-image-smalldeck2x.jpg 2x,
+          ../img/webp/bg-image/bg-image-smalldeck1x.jpg 1x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ../img/webp/bg-image/bg-image-tablet2x.jpg 2x,
+          ../img/webp/bg-image/bg-image-tablet1x.jpg 1x
+        "
+        type="image/webp"
+      />
+      <img
+        srcset="../img/webp/bg-image/bg-image-mobile2x.jpg 2x"
+        src="../img/webp/bg-image/bg-image-mobile1x.jpg"
+        alt="Women in nice blouse"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
