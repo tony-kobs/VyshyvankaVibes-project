@@ -77,7 +77,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section-order {
+  .order-container {
     background-image: url(../img/bg-pictures/grey-elem.png);
     background-repeat: no-repeat;
     background-position: left -222px bottom;
@@ -128,7 +128,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .section-order {
+  .order-container {
     background-position: left -256px bottom;
   }
 
@@ -142,7 +142,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .section-order {
+  .order-container {
     background-position: left -220px bottom;
   }
 
