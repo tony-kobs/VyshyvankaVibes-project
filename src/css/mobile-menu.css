@@ -38,7 +38,7 @@
   min-height: 100vh;
   padding: 20px;
 
-  background-image: url(../img/bg-pictures/mobile-menu-elem.png);
+  background-image: url(/img/bg-pictures/mobile-menu-elem.png);
   background-repeat: no-repeat;
   background-position: 0vw 180%;
   background-size: 342px 302px;
@@ -118,7 +118,7 @@
   .menu-container {
     max-width: 380px;
     padding: 20px 32px;
-    background-image: url(../img/bg-pictures/menu-tablet-elem.png);
+    background-image: url(/img/bg-pictures/menu-tablet-elem.png);
     background-size: contain;
     background-position: 0vw 180%;
   }

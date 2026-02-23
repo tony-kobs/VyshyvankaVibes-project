@@ -78,7 +78,7 @@
 
 @media only screen and (min-width: 768px) {
   .order-container {
-    background-image: url(../img/bg-pictures/grey-elem.png);
+    background-image: url(/img/bg-pictures/grey-elem.png);
     background-repeat: no-repeat;
     background-position: left -222px bottom;
     background-size: 545px 484px;
