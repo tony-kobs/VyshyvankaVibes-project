@@ -25,6 +25,8 @@
 
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
+  background-color: transparent;
+  outline: none;
   padding: 14px 36px;
   margin: 20px auto 40px;
   max-width: 154px;
@@ -35,6 +37,14 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--white);
+
+  transition: all 0.3s ease;
+}
+
+.order-hero-link:hover,
+.order-hero-link:focus,
+.order-hero-link:active {
+  border-color: var(--yellow);
 }
 
 .arrow-icon {
@@ -43,6 +53,15 @@
 
 .little-icon {
   display: none;
+}
+
+.hero-image {
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px #fffd75,
+    0 0 20px #fffd75,
+    0 0 30px #fffd75,
+    0 0 40px #fffd75;
 }
 
 @media only screen and (min-width: 768px) {

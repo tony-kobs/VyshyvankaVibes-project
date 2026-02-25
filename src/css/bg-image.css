@@ -1,3 +1,55 @@
-.container--bg-image {
-  padding: 0;
+.section-bg-image {
+  width: 100vw; /* ширина = ширині екрану */
+  min-height: 500px; /* мінімальна висота = висоті екрану */
+  margin: 40px 0;
+  background-image: url('../img/webp/bg-image/bg-image-mobile1x.webp'); /* шлях до картинки */
+  background-size: cover; /* картинка покриває всю секцію без спотворень */
+  background-position: center; /* завжди центр картинки */
+  background-repeat: no-repeat;
+  transition: background 0.5s ease; /* плавна зміна картинки, якщо буде заміна */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section-bg-image {
+    background-image: url('../img/webp/bg-image/bg-image-mobile2x.webp'); /* картинка для ретини */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-bg-image {
+    margin: 50px 0;
+    min-height: 776px;
+    background-image: url('../img/webp/bg-image/bg-image-tablet1x.webp'); /* картинка для планшетів */
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-bg-image {
+      background-image: url('../img/webp/bg-image/bg-image-tablet2x.webp'); /* картинка для ретини на планшетах */
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-bg-image {
+    margin: 75px 0;
+    background-image: url('../img/webp/bg-image/bg-image-smalldeck1x.webp'); /* картинка для десктопів */
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-bg-image {
+      background-image: url('../img/webp/bg-image/bg-image-smalldeck2x.webp'); /* картинка для ретини на десктопах */
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-bg-image {
+    background-image: url('../img/webp/bg-image/bg-image-bigdeck1x.webp'); /* картинка для великих десктопів */
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .section-bg-image {
+      background-image: url('../img/webp/bg-image/bg-image-bigdeck2x.webp'); /* картинка для ретини на великих десктопах */
+    }
+  }
 }

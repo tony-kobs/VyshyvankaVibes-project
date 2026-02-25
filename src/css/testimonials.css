@@ -6,19 +6,21 @@
 
 .testimonials-list {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   flex-direction: row;
   gap: 26px;
 }
 
 .testimonials-items {
+  flex: 1;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
+  min-height: 100%;
 
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 4px;
@@ -68,10 +70,6 @@
 @media only screen and (min-width: 1280px) {
   .testimonials-items:nth-child(3) {
     display: flex;
-  }
-
-  .testimonials-items {
-    width: calc((100% - 26px * 2) / 3);
   }
 
   .testimonials-list {

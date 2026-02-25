@@ -74,10 +74,26 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.order-submit:hover,
+.order-submit:focus,
+.order-submit:active {
+  border-color: var(--yellow);
+}
+
+.order-image {
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px #fffd75,
+    0 0 20px #fffd75,
+    0 0 30px #fffd75,
+    0 0 40px #fffd75;
 }
 
 @media only screen and (min-width: 768px) {
-  .order-container {
+  .section-order {
     background-image: url(/img/bg-pictures/grey-elem.png);
     background-repeat: no-repeat;
     background-position: left -222px bottom;
@@ -128,7 +144,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .order-container {
+  .section-order {
     background-position: left -256px bottom;
   }
 
@@ -142,7 +158,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .order-container {
+  .section-order {
     background-position: left -220px bottom;
   }
 

@@ -36,6 +36,8 @@
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0px 4px 15px var(--yellow) ;
+  transition: all 0.3s ease;
 }
 
 .gallery-item-title {
@@ -73,6 +75,11 @@
     color: var(--text-color);
   }
 
+  .collections-image:hover,
+  .collections-image:focus {
+  transform: scale(1.05);
+}
+
   .gallery-items-container {
     display: flex;
     align-items: flex-start;
@@ -98,5 +105,9 @@
 
   .gallery-items {
     width: calc((100% - 20px) / 3);
+  }
+
+  .collections-image {
+    box-shadow: none;
   }
 }
