@@ -36,7 +36,7 @@
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0px 4px 15px var(--yellow) ;
+  box-shadow: 0px 4px 15px var(--yellow);
   transition: all 0.3s ease;
 }
 
@@ -53,6 +53,22 @@
 
 .gallery-item-price {
   display: none;
+}
+
+.gallery-items {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(60px) scale(0.97);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.gallery-items.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0) scale(1);
 }
 
 @media screen and (min-width: 768px) {
@@ -77,8 +93,8 @@
 
   .collections-image:hover,
   .collections-image:focus {
-  transform: scale(1.05);
-}
+    transform: scale(1.05);
+  }
 
   .gallery-items-container {
     display: flex;

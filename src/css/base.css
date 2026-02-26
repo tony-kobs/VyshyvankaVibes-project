@@ -98,3 +98,20 @@ h2 {
 .accent {
   color: var(--yellow);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px) scale(0.97);
+  filter: blur(4px);
+  transition:
+    opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
