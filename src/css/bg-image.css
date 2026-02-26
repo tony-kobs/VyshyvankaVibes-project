@@ -1,55 +1,97 @@
-.section-bg-image {
-  width: 100vw; /* ширина = ширині екрану */
-  min-height: 500px; /* мінімальна висота = висоті екрану */
+/* .section-bg-image {
+  width: 100vw;
+  min-height: 500px;
   margin: 40px 0;
-  background-image: url('../img/webp/bg-image/bg-image-mobile1x.webp'); /* шлях до картинки */
-  background-size: cover; /* картинка покриває всю секцію без спотворень */
-  background-position: center; /* завжди центр картинки */
+  background-image: url('../img/webp/bg-image/bg-image-mobile1x.webp');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  transition: background 0.5s ease; /* плавна зміна картинки, якщо буде заміна */
+  transition: background 0.5s ease;
+} */
+
+.section-bg-image {
+  position: relative;
+  width: 100%;
+  margin: 40px 0;
+  min-height: 500px; /* або твоя висота */
+  overflow: hidden;
+}
+
+.section-bg-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/img/webp/bg-image/bg-image-mobile1x.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: scale(1.08);
+  filter: blur(6px);
+
+  transition:
+    opacity 1.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.6s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  z-index: -1;
+}
+
+.section-bg-image.visible::before {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .section-bg-image {
-    background-image: url('../img/webp/bg-image/bg-image-mobile2x.webp'); /* картинка для ретини */
+  .section-bg-image::before {
+    background-image: url('/img/webp/bg-image/bg-image-mobile2x.webp'); /* картинка для ретини */
   }
 }
 
 @media only screen and (min-width: 768px) {
   .section-bg-image {
-    margin: 50px 0;
     min-height: 776px;
-    background-image: url('../img/webp/bg-image/bg-image-tablet1x.webp'); /* картинка для планшетів */
+    margin: 50px 0; /* або твоя висота для планшетів */
+  }
+
+  .section-bg-image::before {
+    background-image: url('/img/webp/bg-image/bg-image-tablet1x.webp'); /* картинка для планшетів */
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .section-bg-image {
-      background-image: url('../img/webp/bg-image/bg-image-tablet2x.webp'); /* картинка для ретини на планшетах */
+    .section-bg-image::before {
+      background-image: url('/img/webp/bg-image/bg-image-tablet2x.webp'); /* картинка для ретини на планшетах */
     }
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .section-bg-image {
-    margin: 75px 0;
-    background-image: url('../img/webp/bg-image/bg-image-smalldeck1x.webp'); /* картинка для десктопів */
+    margin: 75px 0; /* або твоя висота для планшетів */
+  }
+
+  .section-bg-image::before {
+    background-image: url('/img/webp/bg-image/bg-image-smalldeck1x.webp'); /* картинка для десктопів */
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .section-bg-image {
-      background-image: url('../img/webp/bg-image/bg-image-smalldeck2x.webp'); /* картинка для ретини на десктопах */
+    .section-bg-image::before {
+      background-image: url('/img/webp/bg-image/bg-image-smalldeck2x.webp'); /* картинка для ретини на десктопах */
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .section-bg-image {
-    background-image: url('../img/webp/bg-image/bg-image-bigdeck1x.webp'); /* картинка для великих десктопів */
+  .section-bg-image::before {
+    background-image: url('/img/webp/bg-image/bg-image-bigdeck1x.webp'); /* картинка для великих десктопів */
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .section-bg-image {
-      background-image: url('../img/webp/bg-image/bg-image-bigdeck2x.webp'); /* картинка для ретини на великих десктопах */
+    .section-bg-image::before {
+      background-image: url('/img/webp/bg-image/bg-image-bigdeck2x.webp'); /* картинка для ретини на великих десктопах */
     }
   }
 }
