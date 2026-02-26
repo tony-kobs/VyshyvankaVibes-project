@@ -45,6 +45,7 @@
 .order-hero-link:focus,
 .order-hero-link:active {
   border-color: var(--yellow);
+  transform: translateY(-2px);
 }
 
 .arrow-icon {
