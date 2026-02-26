@@ -115,3 +115,25 @@ h2 {
   transform: translateY(0) scale(1);
   filter: blur(0);
 }
+
+.image-rotator {
+  position: relative;
+  width: 100%;
+  display: inline-block; /* або block, якщо потрібно */
+}
+
+.rotator-img {
+  width: 100%;
+  height: auto; /* зберігає пропорції картинки */
+  display: block;
+  transition: opacity 1s ease-in-out;
+  position: absolute; /* для overlap fade */
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rotator-img.active {
+  opacity: 1;
+  position: relative; /* активна картинка визначає висоту контейнера */
+}
