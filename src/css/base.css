@@ -54,7 +54,6 @@ body {
   font-weight: 400;
   font-size: 44px;
 
-  /* line-height: 48px; */
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--white);
@@ -64,7 +63,6 @@ h2 {
   font-weight: 500;
   font-size: 32px;
 
-  /* line-height: 44px; */
   line-height: 1.38;
   letter-spacing: -0.03em;
   color: var(--white);
@@ -73,14 +71,12 @@ h2 {
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 54px;
-    /* line-height: 64px; */
     line-height: 1.2;
   }
 
   h2 {
     font-size: 44px;
 
-    /* line-height: 64px; */
     line-height: 1.45;
   }
 }
@@ -89,7 +85,6 @@ h2 {
   .title {
     font-weight: 400;
     font-size: 64px;
-    /* line-height: 74px; */
     line-height: 1.15;
     letter-spacing: -0.03em;
   }
@@ -116,22 +111,20 @@ h2 {
   filter: blur(0);
 }
 
-/* Контейнер rotator */
 .image-rotator,
 .bg-rotator {
   position: relative;
   width: 100%;
   overflow: hidden;
-  transition: height 0.5s ease; /* підлаштовує висоту під активний елемент */
+  transition: height 0.5s ease;
 }
 
-/* Для img і picture */
 .rotator-img,
 .rotator-picture {
   width: 100%;
   display: block;
   height: auto;
-  position: absolute; /* для fade */
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -141,17 +134,15 @@ h2 {
 .rotator-img.active,
 .rotator-picture.active {
   opacity: 1;
-  position: relative; /* активний елемент визначає висоту контейнера */
+  position: relative;
 }
 
-/* Для картинок всередині picture */
 .rotator-picture img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Background rotator */
 .bg-layer {
   position: absolute;
   top: 0;
@@ -166,5 +157,5 @@ h2 {
 
 .bg-layer.active {
   opacity: 1;
-  position: relative; /* визначає висоту контейнера */
+  position: relative;
 }

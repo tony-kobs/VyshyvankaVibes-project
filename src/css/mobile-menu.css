@@ -73,7 +73,6 @@
   font-weight: 400;
   font-size: 12px;
 
-  /* line-height: 14px; */
   line-height: 1.12;
   text-transform: uppercase;
   color: var(--black);
@@ -108,7 +107,6 @@
   font-weight: 400;
   font-size: 14px;
 
-  /* line-height: 18px; */
   line-height: 1.29;
   text-transform: uppercase;
   color: var(--black);

@@ -36,23 +36,23 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-mobile2x.webp'); /* картинка для ретини */
+    background-image: url('/img/webp/bg-image/bg-image-mobile2x.webp');
   }
 }
 
 @media only screen and (min-width: 768px) {
   .section-bg-image {
     min-height: 776px;
-    margin: 50px 0; /* або твоя висота для планшетів */
+    margin: 50px 0;
   }
 
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-tablet1x.webp'); /* картинка для планшетів */
+    background-image: url('/img/webp/bg-image/bg-image-tablet1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-tablet2x.webp'); /* картинка для ретини на планшетах */
+      background-image: url('/img/webp/bg-image/bg-image-tablet2x.webp');
     }
   }
 }
