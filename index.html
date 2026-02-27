@@ -21,7 +21,7 @@
     />
 
     <script type="module" crossorigin src="/VyshyvankaVibes-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/VyshyvankaVibes-project/assets/index-vp5mHu7m.css">
+    <link rel="stylesheet" crossorigin href="/VyshyvankaVibes-project/assets/index-CNzRSCBz.css">
   </head>
   <body>
     <header class="header">
@@ -153,22 +153,31 @@
         unique history and symbolism, which gives it a special meaning.
       </p>
     </div>
-    <picture class="about-image-wrapper">
-      <source
-        media="(max-width:767px)"
-        srcset="/VyshyvankaVibes-project/assets/about-mobile1x-DF3w4y2k.webp 1x, /VyshyvankaVibes-project/assets/about-mobile2x-BLk6tr3i.webp 2x"
-        type="image/webp" />
-      <source
-        media="(min-width:768px)"
-        srcset="/VyshyvankaVibes-project/assets/about-tablet1x-BPC-JmMb.webp 1x, /VyshyvankaVibes-project/assets/about-tablet2x-D5-l3bct.webp 2x"
-        type="image/webp" />
-      <img
-        class="about-image"
-        srcset="/VyshyvankaVibes-project/assets/about2x-NidwjFeR.webp 2x"
-        src="/VyshyvankaVibes-project/assets/about1x-CXiJO3Oo.webp"
-        alt="image embroidery"
-        loading="lazy"
-    /></picture>
+    <div class="image-rotator about-image-wrapper">
+      <picture class="rotator-picture active">
+        <source
+          media="(max-width:767px)"
+          srcset="/VyshyvankaVibes-project/assets/about-mobile1x-DF3w4y2k.webp 1x, /VyshyvankaVibes-project/assets/about-mobile2x-BLk6tr3i.webp 2x"
+          type="image/webp" />
+        <source
+          media="(min-width:768px)"
+          srcset="/VyshyvankaVibes-project/assets/about-tablet1x-BPC-JmMb.webp 1x, /VyshyvankaVibes-project/assets/about-tablet2x-D5-l3bct.webp 2x"
+          type="image/webp" />
+        <img
+          srcset="/VyshyvankaVibes-project/assets/about2x-NidwjFeR.webp 2x"
+          src="/VyshyvankaVibes-project/assets/about1x-CXiJO3Oo.webp"
+          alt="image embroidery"
+          loading="lazy"
+      /></picture>
+      <picture class="rotator-picture">
+        <img
+          srcset="/VyshyvankaVibes-project/assets/about-rotate2x-Dxn6CIzY.webp 2x"
+          src="/VyshyvankaVibes-project/assets/about-rotate1x-DRxSKOzM.webp"
+          alt="image embroidery"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
@@ -177,90 +186,156 @@
     <h2 class="title collections-title">Our collection</h2>
     <ul class="collections-gallery">
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections1-2x-DAsD96lC.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections1-1x-C8F3Knf_.webp"
-          width="335"
-          height="400"
-          alt="AUGUST Poltava women's blouseRING"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections1-2x-DAsD96lC.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections1-1x-C8F3Knf_.webp"
+            width="335"
+            height="400"
+            alt="AUGUST Poltava women's blouseRING"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections1-rotate2x-Cwu_RRrm.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections1-rotate1x-DqxXHY3K.webp"
+            width="335"
+            height="400"
+            alt="AUGUST Poltava women's blouseRING"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">AUGUST Poltava women's blouseRING</h3>
           <p class="gallery-item-price">3300 UAH</p>
         </div>
       </li>
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections2-2x-DvjJtX7C.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections2-1x-BSSOTr8V.webp"
-          width="335"
-          height="400"
-          alt="Women's blouse Gorgany"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections2-2x-DvjJtX7C.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections2-1x-BSSOTr8V.webp"
+            width="335"
+            height="400"
+            alt="Women's blouse Gorgany"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections2-rotate2x-DAHkbFvy.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections2-rotate1x-BDFXnaki.webp"
+            width="335"
+            height="400"
+            alt="Women's blouse Gorgany"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">Women's blouse Gorgany</h3>
           <p class="gallery-item-price">3350 UAH</p>
         </div>
       </li>
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections3-2x-WgWtCCK4.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections3-1x-CpR0N3LS.webp"
-          width="335"
-          height="400"
-          alt="Women's blouse Crimea"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections3-2x-WgWtCCK4.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections3-1x-CpR0N3LS.webp"
+            width="335"
+            height="400"
+            alt="Women's blouse Crimea"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections3-rotate2x-LKr8Acmu.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections3-rotate1x-LqtFcxdQ.webp"
+            width="335"
+            height="400"
+            alt="Women's blouse Crimea"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">Women's blouse Crimea</h3>
           <p class="gallery-item-price">4000 UAH</p>
         </div>
       </li>
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections4-2x-8hnGPtSp.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections4-1x-DxkAqwch.webp"
-          width="335"
-          height="400"
-          alt="Men's shirt Verkhovina"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections4-2x-8hnGPtSp.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections4-1x-DxkAqwch.webp"
+            width="335"
+            height="400"
+            alt="Men's shirt Verkhovina"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections4-rotate2x-DZ5aci4W.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections4-rotate1x-DRvcQYm1.webp"
+            width="335"
+            height="400"
+            alt="Men's shirt Verkhovina"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">Men's shirt Verkhovina</h3>
           <p class="gallery-item-price">3100 UAH</p>
         </div>
       </li>
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections5-2x-4O8-Ci5c.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections5-1x-Brv0QHbT.webp"
-          width="335"
-          height="400"
-          alt="Mountain men's shirt"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections5-2x-4O8-Ci5c.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections5-1x-Brv0QHbT.webp"
+            width="335"
+            height="400"
+            alt="Mountain men's shirt"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections5-rotate2x-CsWpmO43.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections5-rotate1x-BHRXI3g9.webp"
+            width="335"
+            height="400"
+            alt="Mountain men's shirt"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">Mountain men's shirt</h3>
           <p class="gallery-item-price">3300 UAH</p>
         </div>
       </li>
       <li class="gallery-items">
-        <img
-          class="collections-image"
-          srcset="/VyshyvankaVibes-project/assets/collections6-2x-CGUp4_ly.webp 2x"
-          src="/VyshyvankaVibes-project/assets/collections6-1x-BCx-e9Ur.webp"
-          width="335"
-          height="400"
-          alt="Men's shirt Yasen"
-          loading="lazy"
-        />
+        <div class="image-rotator">
+          <img
+            class="collections-image rotator-img active"
+            srcset="/VyshyvankaVibes-project/assets/collections6-2x-CGUp4_ly.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections6-1x-BCx-e9Ur.webp"
+            width="335"
+            height="400"
+            alt="Men's shirt Yasen"
+            loading="lazy"
+          />
+          <img
+            class="collections-image rotator-img"
+            srcset="/VyshyvankaVibes-project/assets/collections6-rotate2x-DyL6U-uc.webp 2x"
+            src="/VyshyvankaVibes-project/assets/collections6-rotate1x-LtnJ0RMS.webp"
+            width="335"
+            height="400"
+            alt="Men's shirt Yasen"
+            loading="lazy"
+          />
+        </div>
         <div class="gallery-items-container">
           <h3 class="gallery-item-title">Men's shirt Yasen</h3>
           <p class="gallery-item-price">1700 UAH</p>
@@ -273,39 +348,6 @@
       <section class="section-bg-image">
   <div class="container--bg-image">
     <h2 class="visually-hidden">Big Image</h2>
-    <!-- <picture class="bg-image">
-      <source
-        media="(min-width:1440px)"
-        srcset="
-          /img/webp/bg-image/bg-image-bigdeck2x.webp 2x,
-          /img/webp/bg-image/bg-image-bigdeck1x.webp 1x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width:1280px)"
-        srcset="
-          /img/webp/bg-image/bg-image-smalldeck2x.webp 2x,
-          /img/webp/bg-image/bg-image-smalldeck1x.webp 1x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width:768px)"
-        srcset="
-          /img/webp/bg-image/bg-image-tablet2x.webp 2x,
-          /img/webp/bg-image/bg-image-tablet1x.webp 1x
-        "
-        type="image/webp"
-      />
-      <img
-        class="bg-image__img"
-        srcset="/img/webp/bg-image/bg-image-mobile2x.webp 2x"
-        src="/img/webp/bg-image/bg-image-mobile1x.webp"
-        alt="Women in nice blouse"
-        loading="lazy"
-      />
-    </picture> -->
   </div>
 </section>
 
@@ -345,31 +387,41 @@
         </svg>
       </button>
     </div>
-    <picture>
-      <source
-        media="(min-width:1440px)"
-        srcset="/VyshyvankaVibes-project/assets/order-1440-1x-By9ryow1.webp 1x, /VyshyvankaVibes-project/assets/order-1440-2x-BtkbnDC5.webp 2x"
-        type="image/webp"
-      />
-      <source
-        media="(min-width:1280px)"
-        srcset="/VyshyvankaVibes-project/assets/order-1280-1x-C2bmYP8b.webp 1x, /VyshyvankaVibes-project/assets/order-1280-2x-D66-c0KK.webp 2x"
-        type="image/webp"
-      />
-      <source
-        media="(min-width:768px)"
-        srcset="/VyshyvankaVibes-project/assets/order-tablet1x-B8gXHr6P.webp 1x, /VyshyvankaVibes-project/assets/order-tablet2x-O7D1p2m9.webp 2x"
-        type="image/webp"
-      />
-      <img
-        class="order-image"
-        srcset="/VyshyvankaVibes-project/assets/order2x-CJk40nLn.webp 2x"
-        src="/VyshyvankaVibes-project/assets/order1x-jp0XOc63.webp"
-        width="704"
-        height="521"
-        alt="order-image"
-      />
-    </picture>
+    <div class="image-rotator order-image">
+      <picture class="rotator-picture active">
+        <source
+          media="(min-width:1440px)"
+          srcset="/VyshyvankaVibes-project/assets/order-1440-1x-By9ryow1.webp 1x, /VyshyvankaVibes-project/assets/order-1440-2x-BtkbnDC5.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:1280px)"
+          srcset="/VyshyvankaVibes-project/assets/order-1280-1x-C2bmYP8b.webp 1x, /VyshyvankaVibes-project/assets/order-1280-2x-D66-c0KK.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/VyshyvankaVibes-project/assets/order-tablet1x-B8gXHr6P.webp 1x, /VyshyvankaVibes-project/assets/order-tablet2x-O7D1p2m9.webp 2x"
+          type="image/webp"
+        />
+        <img
+          srcset="/VyshyvankaVibes-project/assets/order2x-CJk40nLn.webp 2x"
+          src="/VyshyvankaVibes-project/assets/order1x-jp0XOc63.webp"
+          width="704"
+          height="521"
+          alt="order-image"
+        />
+      </picture>
+      <picture class="rotator-picture">
+        <img
+          srcset="/VyshyvankaVibes-project/assets/order-rotate2x-BoGOtvf4.webp 2x"
+          src="/VyshyvankaVibes-project/assets/order-rotate1x-jPjW1cg3.webp"
+          width="704"
+          height="521"
+          alt="order-image"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
