@@ -1,40 +1,36 @@
-function startImageRotators() {
-  const rotators = document.querySelectorAll('.image-rotator');
+function startUniversalRotators() {
+  // Всі контейнери
+  const rotators = document.querySelectorAll('.image-rotator, .bg-rotator');
 
   rotators.forEach(rotator => {
-    const images = rotator.querySelectorAll('.rotator-img');
+    // Вибираємо всі картинки, picture та background layers
+    const items = rotator.querySelectorAll(
+      '.rotator-img, .rotator-picture, .bg-layer'
+    );
     let index = 0;
 
-    // Спочатку показуємо першу картинку
-    images.forEach(img => img.classList.remove('active'));
-    images[0].classList.add('active');
+    // Початково активна перша картинка
+    items.forEach(i => i.classList.remove('active'));
+    items[0].classList.add('active');
 
-    // Функція для зміни картинки
-    function runRotation() {
-      // ховаємо поточну
-      images[index].classList.remove('active');
-
-      // новий індекс
-      index = (index + 1) % images.length;
-
-      // показуємо наступну
-      images[index].classList.add('active');
-    }
-
-    // Запуск тільки на великих екранах
+    // Запускаємо тільки на великих екранах
     if (window.innerWidth >= 1280) {
-      const intervalId = setInterval(runRotation, 4000);
+      const intervalId = setInterval(() => {
+        items[index].classList.remove('active');
+        index = (index + 1) % items.length;
+        items[index].classList.add('active');
+      }, 4000); // 4 секунди між змінами
 
-      // Зупинка таймера при зменшенні екрана
+      // Зупинка при ресайзі на менші екрани
       window.addEventListener('resize', () => {
         if (window.innerWidth < 1280) {
           clearInterval(intervalId);
-          images.forEach(img => img.classList.remove('active'));
-          images[0].classList.add('active');
+          items.forEach(i => i.classList.remove('active'));
+          items[0].classList.add('active');
         }
       });
     }
   });
 }
 
-window.addEventListener('DOMContentLoaded', startImageRotators);
+window.addEventListener('DOMContentLoaded', startUniversalRotators);

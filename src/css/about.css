@@ -18,13 +18,8 @@
   margin-bottom: 20px;
 }
 
-.about-image {
+.about-image-wrapper {
   border-radius: 15px;
-  box-shadow:
-    0 0 10px #fffd75,
-    0 0 20px #fffd75,
-    0 0 30px #fffd75,
-    0 0 40px #fffd75;
 }
 
 @media only screen and (min-width: 768px) {
@@ -52,7 +47,8 @@
   }
 
   .about-image-wrapper {
-    min-width: 594px;
+    min-width: 600px;
+    min-height: 550px;
   }
 }
 

@@ -86,11 +86,6 @@
 
 .order-image {
   border-radius: 15px;
-  box-shadow:
-    0 0 10px #fffd75,
-    0 0 20px #fffd75,
-    0 0 30px #fffd75,
-    0 0 40px #fffd75;
 }
 
 @media only screen and (min-width: 768px) {

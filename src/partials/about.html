@@ -19,27 +19,36 @@
         unique history and symbolism, which gives it a special meaning.
       </p>
     </div>
-    <picture class="about-image-wrapper">
-      <source
-        media="(max-width:767px)"
-        srcset="
-          /img/webp/about/about-mobile1x.webp 1x,
-          /img/webp/about/about-mobile2x.webp 2x
-        "
-        type="image/webp" />
-      <source
-        media="(min-width:768px)"
-        srcset="
-          /img/webp/about/about-tablet1x.webp 1x,
-          /img/webp/about/about-tablet2x.webp 2x
-        "
-        type="image/webp" />
-      <img
-        class="about-image"
-        srcset="/img/webp/about/about2x.webp 2x"
-        src="/img/webp/about/about1x.webp"
-        alt="image embroidery"
-        loading="lazy"
-    /></picture>
+    <div class="image-rotator about-image-wrapper">
+      <picture class="rotator-picture active">
+        <source
+          media="(max-width:767px)"
+          srcset="
+            /img/webp/about/about-mobile1x.webp 1x,
+            /img/webp/about/about-mobile2x.webp 2x
+          "
+          type="image/webp" />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            /img/webp/about/about-tablet1x.webp 1x,
+            /img/webp/about/about-tablet2x.webp 2x
+          "
+          type="image/webp" />
+        <img
+          srcset="/img/webp/about/about2x.webp 2x"
+          src="/img/webp/about/about1x.webp"
+          alt="image embroidery"
+          loading="lazy"
+      /></picture>
+      <picture class="rotator-picture">
+        <img
+          srcset="/img/webp/about/about-rotate2x.webp 2x"
+          src="/img/webp/about/about-rotate1x.webp"
+          alt="image embroidery"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>

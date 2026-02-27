@@ -1,19 +1,8 @@
-/* .section-bg-image {
-  width: 100vw;
-  min-height: 500px;
-  margin: 40px 0;
-  background-image: url('../img/webp/bg-image/bg-image-mobile1x.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background 0.5s ease;
-} */
-
 .section-bg-image {
   position: relative;
   width: 100%;
   margin: 40px 0;
-  min-height: 500px; /* або твоя висота */
+  min-height: 500px;
   overflow: hidden;
 }
 
@@ -70,28 +59,28 @@
 
 @media only screen and (min-width: 1280px) {
   .section-bg-image {
-    margin: 75px 0; /* або твоя висота для планшетів */
+    margin: 75px 0;
   }
 
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-smalldeck1x.webp'); /* картинка для десктопів */
+    background-image: url('/img/webp/bg-image/bg-image-smalldeck1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-smalldeck2x.webp'); /* картинка для ретини на десктопах */
+      background-image: url('/img/webp/bg-image/bg-image-smalldeck2x.webp');
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-bigdeck1x.webp'); /* картинка для великих десктопів */
+    background-image: url('/img/webp/bg-image/bg-image-bigdeck1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-bigdeck2x.webp'); /* картинка для ретини на великих десктопах */
+      background-image: url('/img/webp/bg-image/bg-image-bigdeck2x.webp');
     }
   }
 }
