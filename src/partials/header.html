@@ -1,21 +1,22 @@
 <header class="header">
   <div class="container header-page">
-    <nav class="header-nav">
-      <a class="logo-header" href="./index.html"
+    <nav class="header-nav" aria-label="Primary">
+      <a class="logo-header" href="./index.html" aria-label="Vyshyvanka Vibes home"
         ><svg
           class="logo-icon"
-          width="32"
-          height="32"
-          alt="logo ornament ukrainian"
+          width="44"
+          height="39"
+          aria-hidden="true"
+          focusable="false"
         >
-          <use href="/img/icons/icons.svg#icon-logo"></use></svg
+          <use href="./img/icons/icons.svg#icon-logo"></use></svg
       ></a>
       <ul class="header-menu">
         <li class="menu-item">
           <a class="menu-item-link" href="#about">About us</a>
         </li>
         <li class="menu-item">
-          <a class="menu-item-link" href="#collection">Our collection </a>
+          <a class="menu-item-link" href="#collection">Our collection</a>
         </li>
         <li class="menu-item">
           <a class="menu-item-link" href="#order">Customer order</a>
@@ -31,28 +32,50 @@
       </address>
       <ul class="social-menu">
         <li class="social-item">
-          <a class="social-link" target="_blank" href=""
-            ><svg class="social-icon" width="28" height="28">
-              <use href="/img/icons/icons.svg#icon-facebook"></use></svg
+          <a
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            ><svg class="social-icon" width="28" height="28" aria-hidden="true">
+              <use href="./img/icons/icons.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li class="social-item">
-          <a class="social-link" target="_blank" href=""
-            ><svg class="social-icon" width="28" height="28">
-              <use href="/img/icons/icons.svg#icon-instagram"></use></svg
+          <a
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            ><svg class="social-icon" width="28" height="28" aria-hidden="true">
+              <use href="./img/icons/icons.svg#icon-instagram"></use></svg
           ></a>
         </li>
         <li class="social-item">
-          <a class="social-link" target="_blank" href=""
-            ><svg class="social-icon" width="28" height="28">
-              <use href="/img/icons/icons.svg#icon-youtube"></use></svg
+          <a
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/"
+            aria-label="YouTube"
+            ><svg class="social-icon" width="28" height="28" aria-hidden="true">
+              <use href="./img/icons/icons.svg#icon-youtube"></use></svg
           ></a>
         </li>
       </ul>
 
-      <button class="menu-toggle" type="button" data-menu-open>
-        <svg class="menu-icon" width="36" height="24">
-          <use href="/img/icons/icons.svg#icon-nav"></use>
+      <button
+        class="menu-toggle"
+        type="button"
+        data-menu-open
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="36" height="24" aria-hidden="true">
+          <use href="./img/icons/icons.svg#icon-nav"></use>
         </svg>
       </button>
     </div>

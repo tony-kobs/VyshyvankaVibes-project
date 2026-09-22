@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 20px 7px 20px;
+  padding-top: 26px;
+  padding-bottom: 7px;
 }
 
 .header-menu {
@@ -42,16 +43,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .header-page {
-    padding: 26px 32px 7px 32px;
-  }
-
   .social-menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-    left: auto;
   }
 
   .social-item {
@@ -65,12 +61,12 @@
     height: 44px;
 
     background: rgba(252, 249, 249, 0.1);
-    transition: all 0.2s ease;
+    transition: border-color 0.2s ease;
   }
 
   .social-item:hover,
-  .social-item:focus {
-    border: 1px solid var(--yellow);
+  .social-item:focus-within {
+    border-color: var(--yellow);
   }
 
   .social-icon {
@@ -86,7 +82,8 @@
 
 @media only screen and (min-width: 1280px) {
   .header-page {
-    padding: 24px 50px 7px 50px;
+    padding-top: 24px;
+    padding-bottom: 7px;
   }
 
   .header-nav {
@@ -124,12 +121,12 @@
     padding: 14px 28px;
     font-style: normal;
 
-    transition: border 0.2s ease;
+    transition: border-color 0.2s ease;
   }
 
   .header-contacts:hover,
-  .header-contacts:focus {
-    border: 1px solid var(--yellow);
+  .header-contacts:focus-within {
+    border-color: var(--yellow);
   }
 
   .phone-number {
@@ -140,11 +137,5 @@
 
   .menu-toggle {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .header-page {
-    padding: 24px 100px 7px 100px;
   }
 }

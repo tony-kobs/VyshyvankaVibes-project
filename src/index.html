@@ -5,6 +5,17 @@
     <link rel="icon" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka Vibes</title>
+    <meta
+      name="description"
+      content="Vyshyvanka Vibes is a store of handmade Ukrainian embroidery. Authentic vyshyvanka, modern design, and personal customer orders."
+    />
+    <meta property="og:title" content="Vyshyvanka Vibes" />
+    <meta
+      property="og:description"
+      content="Handmade Ukrainian vyshyvanka with traditional artistry and modern style."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/webp/hero/hero1x.webp" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -16,138 +27,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Preload critical images -->
     <link
       rel="preload"
-      href="/img/webp/hero/hero1x.webp"
+      href="./img/webp/hero/hero1x.webp"
       as="image"
       type="image/webp"
-      media="(max-width: 767px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/hero/hero2x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/about/about1x.webp"
-      as="image"
-      type="image/webp"
-      media="(max-width: 767px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/about/about2x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/bg-image/bg-image-mobile1x.webp"
-      as="image"
-      type="image/webp"
-      media="(max-width: 767px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/bg-image/bg-image-tablet1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/bg-image/bg-image-smalldeck1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 1280px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/bg-image/bg-image-bigdeck1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 1440px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections1-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections2-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections3-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections4-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections5-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/collections/collections6-1x.webp"
-      as="image"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/order/order1x.webp"
-      as="image"
-      type="image/webp"
-      media="(max-width: 767px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/order/order-tablet1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/order/order-1280-1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 1280px)"
-    />
-    <link
-      rel="preload"
-      href="/img/webp/order/order-1440-1x.webp"
-      as="image"
-      type="image/webp"
-      media="(min-width: 1440px)"
+      imagesrcset="./img/webp/hero/hero1x.webp 1x, ./img/webp/hero/hero2x.webp 2x"
+      imagesizes="(min-width: 768px) 413px, 335px"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <load src="./partials/header.html" />
 
-    <main>
+    <main id="main">
       <load src="./partials/hero.html" />
       <load src="./partials/about.html" />
       <load src="./partials/collections.html" />

@@ -2,79 +2,110 @@
   <div class="container order-container">
     <div class="order-wrapper">
       <h2 class="order-title">
-        <span class="mobile-title--order"
-          ><span class="accent">Subscribe</span> our newsletter to receive the
-          latest news and exclusive offers every week.</span
-        >
-        <span class="tablet-deckstop-title--order"
-          ><span class="accent">Your order</span> is our priority: Personalized
-          approach and quality of service</span
-        >
+        <span class="accent">Your order</span> is our priority: Personalized
+        approach and quality of service
       </h2>
-      <form class="order-form">
-        <input
-          class="input-order"
-          type="text"
-          placeholder="Enter your full name"
-        />
-        <input
-          class="input-order"
-          type="email"
-          placeholder="Enter your email"
-        />
-        <textarea
-          class="input-order comments-order"
-          placeholder="Comments"
-        ></textarea>
+      <form class="order-form" action="#" method="post" novalidate>
+        <label class="order-field">
+          <span class="visually-hidden">Full name</span>
+          <input
+            class="input-order"
+            type="text"
+            name="name"
+            id="order-name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            minlength="2"
+            maxlength="80"
+            required
+          />
+        </label>
+        <label class="order-field">
+          <span class="visually-hidden">Email</span>
+          <input
+            class="input-order"
+            type="email"
+            name="email"
+            id="order-email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          />
+        </label>
+        <label class="order-field order-field-comments">
+          <span class="visually-hidden">Comments</span>
+          <textarea
+            class="input-order comments-order"
+            name="comment"
+            id="order-comment"
+            placeholder="Comments"
+            maxlength="1000"
+          ></textarea>
+        </label>
+        <button class="order-submit" type="submit">
+          Send
+          <svg
+            class="arrow-icon"
+            width="42"
+            height="20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="./img/icons/icons.svg#icon-untitled"></use>
+          </svg>
+        </button>
+        <p class="order-form-status" role="status" hidden></p>
       </form>
-      <button class="order-submit">
-        Send
-        <svg class="arrow-icon" width="42" height="20">
-          <use href="/img/icons/icons.svg#icon-untitled"></use>
-        </svg>
-      </button>
     </div>
     <div class="image-rotator order-image">
       <picture class="rotator-picture active">
         <source
           media="(min-width:1440px)"
           srcset="
-            /img/webp/order/order-1440-1x.webp 1x,
-            /img/webp/order/order-1440-2x.webp 2x
+            ./img/webp/order/order-1440-1x.webp 1x,
+            ./img/webp/order/order-1440-2x.webp 2x
           "
           type="image/webp"
         />
         <source
           media="(min-width:1280px)"
           srcset="
-            /img/webp/order/order-1280-1x.webp 1x,
-            /img/webp/order/order-1280-2x.webp 2x
+            ./img/webp/order/order-1280-1x.webp 1x,
+            ./img/webp/order/order-1280-2x.webp 2x
           "
           type="image/webp"
         />
         <source
           media="(min-width:768px)"
           srcset="
-            /img/webp/order/order-tablet1x.webp 1x,
-            /img/webp/order/order-tablet2x.webp 2x
+            ./img/webp/order/order-tablet1x.webp 1x,
+            ./img/webp/order/order-tablet2x.webp 2x
           "
           type="image/webp"
         />
         <img
-          srcset="/img/webp/order/order2x.webp 2x"
-          src="/img/webp/order/order1x.webp"
+          srcset="
+            ./img/webp/order/order1x.webp 1x,
+            ./img/webp/order/order2x.webp 2x
+          "
+          src="./img/webp/order/order1x.webp"
           width="704"
           height="521"
-          alt="order-image"
+          alt="Woman wearing a vyshyvanka with a floral wreath"
+          loading="lazy"
         />
       </picture>
       <picture class="rotator-picture">
         <img
-          srcset="/img/webp/order/order-rotate2x.webp 2x"
-          src="/img/webp/order/order-rotate1x.webp"
+          srcset="
+            ./img/webp/order/order-rotate1x.webp 1x,
+            ./img/webp/order/order-rotate2x.webp 2x
+          "
+          src="./img/webp/order/order-rotate1x.webp"
           width="704"
           height="521"
-          alt="order-image"
+          alt="Another vyshyvanka look from the collection"
+          loading="lazy"
         />
       </picture>
     </div>

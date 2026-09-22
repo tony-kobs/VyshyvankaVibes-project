@@ -1,23 +1,34 @@
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section:not(.hero-section)');
+const prefersReducedMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches;
 
-sections.forEach(section => {
-  section.classList.add('reveal');
-});
+const showSections = () => {
+  sections.forEach(section => {
+    section.classList.add('reveal', 'visible');
+  });
+};
 
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
-);
+if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+  showSections();
+} else {
+  sections.forEach(section => {
+    section.classList.add('reveal');
+  });
 
-document.querySelectorAll('.reveal').forEach(el => {
-  observer.observe(el);
-});
+  const observer = new IntersectionObserver(
+    (entries, sectionObserver) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  sections.forEach(section => observer.observe(section));
+}

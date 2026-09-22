@@ -1,5 +1,6 @@
 .section-bg-image {
   position: relative;
+  isolation: isolate;
   width: 100%;
   margin: 40px 0;
   min-height: 500px;
@@ -11,7 +12,7 @@
   position: absolute;
   inset: 0;
 
-  background-image: url('/img/webp/bg-image/bg-image-mobile1x.webp');
+  background-image: url('../img/webp/bg-image/bg-image-mobile1x.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +37,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-mobile2x.webp');
+    background-image: url('../img/webp/bg-image/bg-image-mobile2x.webp');
   }
 }
 
@@ -47,12 +48,12 @@
   }
 
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-tablet1x.webp');
+    background-image: url('../img/webp/bg-image/bg-image-tablet1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-tablet2x.webp');
+      background-image: url('../img/webp/bg-image/bg-image-tablet2x.webp');
     }
   }
 }
@@ -63,24 +64,24 @@
   }
 
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-smalldeck1x.webp');
+    background-image: url('../img/webp/bg-image/bg-image-smalldeck1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-smalldeck2x.webp');
+      background-image: url('../img/webp/bg-image/bg-image-smalldeck2x.webp');
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .section-bg-image::before {
-    background-image: url('/img/webp/bg-image/bg-image-bigdeck1x.webp');
+    background-image: url('../img/webp/bg-image/bg-image-bigdeck1x.webp');
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .section-bg-image::before {
-      background-image: url('/img/webp/bg-image/bg-image-bigdeck2x.webp');
+      background-image: url('../img/webp/bg-image/bg-image-bigdeck2x.webp');
     }
   }
 }

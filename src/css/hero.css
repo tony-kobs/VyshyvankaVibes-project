@@ -1,7 +1,3 @@
-.hero-section {
-  padding-top: 84px;
-}
-
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -15,6 +11,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-info .image-rotator {
+  border-radius: 15px;
 }
 
 .order-hero-link {
@@ -38,7 +38,9 @@
   text-transform: uppercase;
   color: var(--white);
 
-  transition: all 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .order-hero-link:hover,
@@ -61,10 +63,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-section {
-    padding-top: 100px;
-  }
-
   .hero-container {
     display: flex;
     flex-direction: row;
@@ -132,12 +130,5 @@
 @media only screen and (min-width: 1440px) {
   .hero-container {
     gap: 61px;
-  }
-
-  .hero-info {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 40px;
   }
 }
